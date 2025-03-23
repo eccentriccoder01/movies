@@ -21,11 +21,11 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7941997498:AAEFqrwWqc7A6hYmKZxh9kcfAUGF-ko
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1226915127').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/MrEccentric") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-2649984098'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+Uux2GxpCKIxjNjU0')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+BZniDwc_vYw1ZTNk')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-2374228840').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://eccentriccoder:T8D31KLAtlas$@filmdom.mkkm0.mongodb.net/?retryWrites=true&w=majority&appName=Filmdom")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sagnikgraviton847:Filmdom@filmdom.mkkm0.mongodb.net/?retryWrites=true&w=majority&appName=Filmdom")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Filmdom")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
@@ -35,7 +35,7 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','0'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', 'https://t.me/+cdb0T5GzKCAzNGI8')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 request_channel = environ.get('REQUEST_CHANNEL', '0')
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
