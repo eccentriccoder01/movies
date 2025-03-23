@@ -12,21 +12,6 @@ def is_enabled(value, default):
         return default
 #---------------------------------------------------------------
 #---------------------------------------------------------------  
-[[[BOT_TOKEN: 
-
-API_ID: 
-
-API_HASH: 
-
-CHANNEL: 2374228840
-
-ADMINS: 
-
-DATABASE_URI:
-
-DATABASE NAME:
-
-LOG_CHANNEL: ]]]
        ,
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23294809'))
