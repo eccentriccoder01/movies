@@ -38,7 +38,7 @@ async def most(client, message):
     
     reply_markup = ReplyKeyboardMarkup(keyboard, one_time_keyboard=True, resize_keyboard=True, placeholder="Most searches of the day")
     m=await message.reply_text("𝑃𝑙𝑒𝑎𝑠𝑒 𝑊𝑎𝑖𝑡, 𝐹𝑒𝑡𝑐ℎ𝑖𝑛𝑔 𝑀𝑜𝑠𝑡 𝑆𝑒𝑎𝑟𝑐ℎ𝑒𝑠.")
-    await m.edit_text("𝑃𝑙𝑒𝑎𝑠𝑒 𝑊𝑎𝑖𝑡, 𝐹𝑒𝑡𝑐ℎ𝑖𝑛𝑔 𝑀𝑜𝑠𝑡 𝑆𝑒𝑎𝑟𝑐ℎ𝑒𝑠..")
+    await m.edit_text("𝑃𝑙𝑒𝑎𝑠𝑒 𝑊𝑎𝑖𝑡, 𝐹𝑒𝑡𝑐ℎ𝑖𝑛𝑔 𝑀𝑜𝑠𝑡 𝑆𝑒𝑎𝑟𝑐ℎ𝑒𝑠...")
     await m.delete()
     await message.reply_text(f"<b>Hᴇʀᴇ ɪꜱ ᴛʜᴇ ᴍᴏꜱᴛ ꜱᴇᴀʀᴄʜᴇꜱ ʟɪꜱᴛ 👇</b>", reply_markup=reply_markup)
 

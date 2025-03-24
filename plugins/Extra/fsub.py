@@ -24,7 +24,7 @@ async def force_subscribe(client, message):
         return await m.edit("CHAT_ID isn't valid!")
     toFsub = int(toFsub)
     if toFsub == message.chat.id:
-        return await m.edit("It seems like you're attempting to enable force subscription for this chat ID. Please use a different chat ID !")
+        return await m.edit("It seems like you're attempting to enable force subscription for this chat ID. Please use a different chat ID!")
     if not await is_check_admin(client, toFsub, client.me.id):
         return await m.edit("I need to be an admin in the given chat to perform this action!\nMake me admin in your Target chat and try again.")
     try:
@@ -32,11 +32,11 @@ async def force_subscribe(client, message):
         return await m.edit(f"Successfully added force subscribe to {toFsub} in {message.chat.title}")
     except Exception as e:
         logger.exception(e)
-        return await m.edit(f"Something went wrong ! Try again later or report in Support Group @Jisshu_support")
+        return await m.edit(f"Something went wrong! Try again later or report in Support Group @Filmdom_support")
 
 @Client.on_message(filters.command("del_fsub"))
 async def del_force_subscribe(client, message):
-    m = await message.reply_text("Wait im checking...")
+    m = await message.reply_text("Wait I'm checking...")
     if not message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         return await m.edit("This command is only for groups!")
     if not await is_check_admin(client, message.chat.id, message.from_user.id):
@@ -49,7 +49,7 @@ async def del_force_subscribe(client, message):
 
 @Client.on_message(filters.command("show_fsub"))
 async def show_fsub(client, message):
-    m = await message.reply_text("Wait im checking...")
+    m = await message.reply_text("Wait I'm checking...")
     if not message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         return await m.edit("This command is only for groups!")
     # check if commad is given by admin or not

@@ -138,7 +138,7 @@ async def users_broadcast(user_id, message, is_pin):
         return await users_broadcast(user_id, message)
     except InputUserDeactivated:
         await db.delete_user(int(user_id))
-        logging.info(f"{user_id}-Removed from Database, since deleted account.")
+        logging.info(f"{user_id}-Removed from Database, since account is deleted.")
         return False, "Deleted"
     except UserIsBlocked:
         logging.info(f"{user_id} -Blocked the bot.")

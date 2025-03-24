@@ -11,4 +11,4 @@ async def blocked_user(_: Client, u: Update, __: dict, ___: dict):
     if not u.stopped:
         return
     await db.delete_user(u.user_id)
-    logging.info(f"{u.user_id} - Removed from Database, since blocked account.")
+    logging.info(f"{u.user_id} - Removed from Database, since account is blocked.")

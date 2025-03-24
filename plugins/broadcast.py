@@ -67,7 +67,7 @@ async def broadcast_users(bot, message):
 
 @Client.on_message(filters.command("grp_broadcast") & filters.user(ADMINS) & filters.reply)
 async def broadcast_group(bot, message):
-    p = await message.reply('<b>Do you want pin this message in groups?</b>', reply_markup=ReplyKeyboardMarkup([['Yes', 'No']], one_time_keyboard=True, resize_keyboard=True))
+    p = await message.reply('<b>Do you want to pin this message in groups?</b>', reply_markup=ReplyKeyboardMarkup([['Yes', 'No']], one_time_keyboard=True, resize_keyboard=True))
     msg = await bot.listen(chat_id=message.chat.id, user_id=message.from_user.id)
     if msg.text == 'Yes':
         is_pin = True

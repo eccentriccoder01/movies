@@ -45,7 +45,7 @@ class Database:
             private_filter=True,
             group_filter=True,
             terms=True,
-            spoll_check=True,
+            spell_check=True,
             forcesub=True,
             shortner=None,
             no_ads=False,
@@ -59,7 +59,7 @@ class Database:
             'private_filter': private_filter,
             'group_filter': group_filter,
             'terms': terms,
-            'spoll_check': spoll_check,
+            'spell_check': spell_check,
             'forcesub': forcesub,
             'shortner': shortner,
             'no_ads': no_ads,
@@ -67,7 +67,7 @@ class Database:
         }
     
     
-    async def update_advirtisment(self, ads_string=None, ads_name=None, expiry=None, impression=None):
+    async def update_advertisement(self, ads_string=None, ads_name=None, expiry=None, impression=None):
         config = await self.config_col.find_one({})
         if not config:
             await self.config_col.insert_one(self.create_configuration_data())
@@ -88,10 +88,10 @@ class Database:
 
         await self.config_col.update_one({}, {'$set': {'advertisement': advertisement}}, upsert=True)
 
-    async def update_advirtisment_impression(self, impression=None):
+    async def update_advertisement_impression(self, impression=None):
         await self.config_col.update_one({}, {'$set': {'advertisement.impression_count': impression}}, upsert=True)
 
-    async def get_advirtisment(self):
+    async def get_advertisement(self):
         configuration = await self.config_col.find_one({})
         if not configuration:
             await self.config_col.insert_one(self.create_configuration_data())

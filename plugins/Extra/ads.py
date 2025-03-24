@@ -11,7 +11,7 @@ async def set_ads(client, message):
     try:
         command_args = message.text.split(maxsplit=1)[1]
         if '#' not in command_args or len(command_args.split('#')) < 3:
-            await message.reply_text(f"Usage: /set_ads {{ads name}}#{{time}}#{{photo URL}} <a href=https://t.me/Jisshu_developer/9>Explain</a>")
+            await message.reply_text(f"Usage: /set_ads {{ads name}}#{{time}}#{{photo URL}} <a href=https://t.me/filmdom_updates/4>Explanation</a>")
             return
 
         ads_name, duration_or_impression, url = command_args.split('#', 2)
@@ -56,11 +56,11 @@ async def set_ads(client, message):
             return
 
        
-        await mdb.update_advirtisment(reply.text, f"{ads_name}", expiry_date, impression_count)
+        await mdb.update_advertisement(reply.text, f"{ads_name}", expiry_date, impression_count)
         await db.jisshu_set_ads_link(url)
 
         await asyncio.sleep(3)
-        _, name, _ = await mdb.get_advirtisment()
+        _, name, _ = await mdb.get_advertisement()
         await message.reply_text(f"Advertisement: '{name}' has been set with the stream link: {url}")
     except Exception as e:
         await message.reply_text(f"An error occurred: {str(e)}")
@@ -69,7 +69,7 @@ async def set_ads(client, message):
 @Client.on_message(filters.private & filters.command("ads"))
 async def ads(_, message):
     try:
-        _, name, impression = await mdb.get_advirtisment()
+        _, name, impression = await mdb.get_advertisement()
         if not name:
             await message.reply_text(f"No ads set.")
             return
@@ -90,7 +90,7 @@ def checkIfLinkIsValid(link):
 @Client.on_message(filters.private & filters.command("del_ads") & filters.user(ADMINS))
 async def del_ads(client, message):
     try:
-        await mdb.update_advirtisment()
+        await mdb.update_advertisement()
         
         current_link = await db.jisshu_get_ads_link()
         if current_link:

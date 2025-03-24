@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://i.ibb.co/qpxpGmC/image.jpg" alt="Jisshu-Auto-filter">
+  <img src="https://i.pinimg.com/1200x/ea/aa/07/eaaa07f0cca919f954aa6a19eb8e1f09.jpg" alt="Filmdom Movies">
 </p>
 <h1 align="center">
-  <a href="https://telegram.me/JISSHU_BOTS">Movie/Auto Filter Bot</a>
+  <a href="https://telegram.me/Filmdom_Movies">Movie/Auto Filter Bot</a>
 </h1>
 <img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
 
@@ -78,7 +78,7 @@
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/Jisshubot/Jisshu-filter-bot">
+<a href="https://heroku.com/deploy?template=https://github.com/eccentriccoder01/movies">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
@@ -90,7 +90,7 @@
 <br>
 <br>
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Jisshubots/Jisshu-filter-bot&branch=main&name=Jisshu-filter-bot )
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&eccentriccoder01/movies&branch=main&name=movies )
 </details>
 
 <details><summary>Deploy To Render</summary>
@@ -117,7 +117,7 @@ Use these settings when adding a monitor:</b>
 <b>Click on the below button to deploy directly to render ↓</b>
 <br>
 <br>
-<a href="https://render.com/deploy?repo=https://github.com/Jisshubots/Jisshu-filter-bot/tree/main">
+<a href="https://render.com/deploy?repo=https://github.com/eccentriccoder01/movies/tree/main">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a>
 </details>
@@ -125,7 +125,7 @@ Use these settings when adding a monitor:</b>
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Jisshubot/Jisshu-filter-bot
+git clone https://github.com/eccentriccoder01/movies
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -138,11 +138,7 @@ python3 bot.py
 
 
 ## **Thanks to** 
- - <b>Thanks To [Zishan Khan](https://t.me/JISSHU_BOTS) To Modify And Add Amazing Feature In The Repo
- - Thanks To [biisal](https://github.com/biisal/biisal-filter-bot) For Base Repo
- - Thanks To [Ꭺɴᴏɴʏᴍᴏᴜꜱ](https://t.me/TG_Anonymous_Official) To refresh Future Code and Update premium future</b>
- - Thanks To [Zoro](https://t.me/JOYBOY_ZORO) Your ideas have been a huge help in improving this project. Thanks for your valuable input!
- - Thanks To [ɪᴛ'ꜱ ʟᴜғғʏ](https://t.me/CoderluffyTG) For fixing key errors and making the bot better. Your help has been truly appreciated!
+ - <b>Thanks To [Sagnik Chakraborty](https://t.me/mreccen_tric) For Modifying And Adding Amazing Features In The Repo
  - Thanks To All Everyone In This Journey
  <img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
 
