@@ -11,8 +11,8 @@
 `/commands` Enter this command inside the bot and all the commands will be set automatically.
 <img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
 
-## **Futures**
-<details><summary>Check Bot Futures</summary>
+## **Features**
+<details><summary>Check Bot Features</summary>
 <br>
 
 - [x] 𝑺𝒉𝒐𝒓𝒕𝒏𝒆𝒓 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝒊𝒏 𝑺𝒕𝒓𝒆𝒂𝒎 𝒂𝒏𝒅 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅 𝒇𝒆𝒂𝒕𝒖𝒓𝒆

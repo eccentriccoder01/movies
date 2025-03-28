@@ -19,10 +19,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7941997498:AAEFqrwWqc7A6hYmKZxh9kcfAUGF-ko
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1226915127 6713601081').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/MrEccentric") # ADMIN USERNAME
+USERNAME = environ.get('USERNAME', "https://t.me/Filmdom_Bot") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002649984098'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+BZniDwc_vYw1ZTNk')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001546914136 -1002374228840 -1002565241137 -1002493411028').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002374228840 -1002565241137 -1002493411028').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sagnikgraviton847:Filmdom@filmdom.mkkm0.mongodb.net/?retryWrites=true&w=majority&appName=Filmdom")
@@ -71,7 +71,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 START_IMG = (environ.get('START_IMG', 'https://i.pinimg.com/1200x/8e/36/25/8e3625932677d5623a54c9aa3ff4b74a.jpg https://i.pinimg.com/1200x/ea/aa/07/eaaa07f0cca919f954aa6a19eb8e1f09.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/_kA.jpg')).split()
+PAYPICS = (environ.get('PAYPICS', 'https://i.pinimg.com/1200x/88/80/78/888078ac1a48b664a61da95c4e088c2b.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://i.pinimg.com/1200x/a1/19/06/a11906c52bcbe583d2a8ee9e67f02048.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
