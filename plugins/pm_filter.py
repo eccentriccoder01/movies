@@ -1000,7 +1000,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview = True
 	)
     elif query.data == "mydevelopers":
-        await query.answer("Meet the mind behind this bot:\n\n👨‍💻 You'll find me in the shadows tonight, 🤫 I'm Watching You \n\n\n, show_alert=True)
+        await query.answer("Meet the mind behind this bot:\n\n👨‍💻 You'll find me in the shadows tonight, 🤫 I'm Watching You \n\n\n", show_alert=True)
  
     elif query.data == "Source":
         buttons = [
